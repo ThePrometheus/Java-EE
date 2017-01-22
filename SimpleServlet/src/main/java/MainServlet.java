@@ -31,6 +31,7 @@ public class MainServlet extends HttpServlet {
             String htmlResponse = "<html>";
             htmlResponse += "<h2>incorrect name : " + username + "<br/>";
             htmlResponse += "</html>";
+            throw new IllegalArgumentException("Not valid name");
 
         }
 
